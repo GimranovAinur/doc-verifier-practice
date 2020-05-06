@@ -19,10 +19,12 @@ public class User {
 
     private String password;
 
-    @Enumerated(EnumType.STRING)
+    @ManyToOne
+    @JoinColumn(name = "role")
     private UserRole role;
 
-    @Enumerated(EnumType.STRING)
+    @ManyToOne
+    @JoinColumn(name = "status")
     private UserStatus status;
 
 }

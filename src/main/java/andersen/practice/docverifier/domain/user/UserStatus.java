@@ -1,9 +1,15 @@
 package andersen.practice.docverifier.domain.user;
 
-public enum UserStatus {
+import lombok.Data;
 
-    ACTIVE,
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-    LOCKED
+@Entity
+@Data
+public class UserStatus {
+
+    @Id
+    private String code;
 
 }

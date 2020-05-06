@@ -1,9 +1,17 @@
 package andersen.practice.docverifier.domain.user;
 
-public enum UserRole {
+import lombok.Data;
 
-    USER,
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-    ADMIN
+@Entity
+@Table(name = "users_role")
+@Data
+public class UserRole {
+
+    @Id
+    private String code;
 
 }

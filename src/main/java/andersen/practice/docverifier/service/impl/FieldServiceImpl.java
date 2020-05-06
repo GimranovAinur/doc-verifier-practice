@@ -1,7 +1,7 @@
 package andersen.practice.docverifier.service.impl;
 
 import andersen.practice.docverifier.domain.document.Field;
-import andersen.practice.docverifier.repository.field.FieldRepositoryCustom;
+import andersen.practice.docverifier.repository.document.FieldRepositoryCustom;
 import andersen.practice.docverifier.service.FieldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
